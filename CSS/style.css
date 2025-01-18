@@ -83,11 +83,14 @@ margin-top: .75em;
     border: 1px solid var(--green);
 }
 
-/* menu items in grid using grid-colum template 1fr 1fr 1fr ration */
+/* menu items in grid using grid-colum template 1fr 1fr 1fr ration.
+ table item in grid. All table item width minmum auto fit 320px */
 .menu{
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(320px));
+
     background:linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
     color:var(--white);
 
