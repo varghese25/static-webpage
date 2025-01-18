@@ -1,0 +1,134 @@
+
+:root{
+    --red:crimson;
+    --yellow:#FFC54D;
+    --green:#53BF9D;
+    --white:whitesmoke;
+
+    
+}
+
+/* body& h2 If any margin set by inspect the element look in computed, any margin is there give over body,h2 to margin 0 */
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(/images/restbg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:var(--white);
+
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+
+}
+header{
+    display: flex;
+    padding: 1em;
+}
+
+/* mudpot inside logo  Menu location(inside nav)   cells algined in 3: 2 ration */
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+
+/* Menu location(inside nav) */
+nav{
+    flex: 2;
+    display: flex;
+}
+
+/* men location  sperated 1 ration <a href="">Menu</a>
+                <a href="">Location</a> a */
+nav a {
+    flex:1;
+}
+
+nav a:hover{
+    color: var(--green);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 1em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color:var(--yellow);
+
+}
+.maintext div{
+margin-top: .75em;
+}
+
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+
+/* menu items in grid using grid-colum template 1fr 1fr 1fr ration */
+.menu{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background:linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color:var(--white);
+
+
+}
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    font-size: 2.5em;
+    color:var(--red);
+    display: flex;
+    justify-content: center;
+
+}
+/* starter maincoures  chats heading */
+.menu th{
+    color: var(--green);
+    font-size: 1.8em;
+}
+
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+/* menu table row, flex box */
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+/* div class="menu" tr has two  td=item & td=price nth child 
+1 means item   
+flex: 1 item takes the place whole*/
+.menu td:nth-child(1){
+    flex: 1;
+justify-self: left;
+}
+
+/* 2 means price */
+.menu td:nth-child(2){
+    justify-self: right;
+    }
